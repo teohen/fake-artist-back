@@ -1,8 +1,8 @@
 const app = require('./app')
 const socket = require('socket.io')
 
-const server = app.listen(8080, ()=> {
-    console.log("server running")
+const server = app.listen(8080, () => {
+    console.log("server running on port 8080")
 })
 
 socket(server, {
